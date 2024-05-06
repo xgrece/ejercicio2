@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace ejercicio.models
 {
-    class Tipo_Documento
+    internal class Tipo_Documento
     {
+        public string Tipo { get; set; }
+
+        // Constructor
+        public Tipo_Documento(string tipo)
+        {
+            Tipo = tipo;
+        }
     }
 }
