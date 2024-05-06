@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace ejercicio.models
 {
-    class Puesto
+    internal class Puesto
     {
+        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
+
+        // Constructor
+        public Puesto(string nombre, string descripcion)
+        {
+            Nombre = nombre;
+            Descripcion = descripcion;
+        }
     }
 }

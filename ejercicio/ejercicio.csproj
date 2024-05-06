@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="models\Administradora.cs" />
+    <Compile Include="models\admin.cs" />
     <Compile Include="models\Empleado.cs" />
     <Compile Include="models\Puesto.cs" />
     <Compile Include="models\Tipo_Documento.cs" />
