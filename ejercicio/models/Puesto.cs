@@ -14,8 +14,10 @@ namespace ejercicio.models
         // Constructor
         public Puesto(string nombre, string descripcion)
         {
-            Nombre = nombre;
-            Descripcion = descripcion;
+            this.Nombre = nombre;
+            this.Descripcion = descripcion;
+     
         }
+        public Puesto() { }
     }
 }

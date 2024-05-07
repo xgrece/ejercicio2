@@ -13,7 +13,7 @@ namespace ejercicio.models
         // Constructor
         public Tipo_Documento(string tipo)
         {
-            Tipo = tipo;
+            this.Tipo = tipo;
         }
     }
 }

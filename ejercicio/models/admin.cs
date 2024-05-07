@@ -15,9 +15,9 @@ namespace ejercicio.models
         // Constructor
         public Admin(Empleado empleado, Puesto puesto, Tipo_Documento tipoDoc)
         {
-            Empleado = empleado;
-            Puesto = puesto;
-            TipoDoc = tipoDoc;
+            this.Empleado = empleado;
+            this.Puesto = puesto;
+            this.TipoDoc = tipoDoc;
         }
     }
 }
