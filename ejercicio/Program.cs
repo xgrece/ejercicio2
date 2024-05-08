@@ -1,4 +1,4 @@
-﻿using ejercicio.models;
+using ejercicio.models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,17 +10,21 @@ namespace ejercicio
 
     class Program
     {
-        // Crear una instancia de DateTime para la fecha de nacimiento
-
-        Puesto puesto = new Puesto("Gerente", "Responsable de la gestión del personal");
-        Tipo_Documento tipoDoc = new Tipo_Documento("DNI"); // Crear una instancia de Tipo_Documento
-
-        Empleado empleado = new Empleado("Agustin", "Perez", new DateTime(1532, 3, 2), "12345678", tipoDocumento: tipoDoc, puesto);
-        Admin admin = new Admin(empleado, puesto, tipoDoc);
-        public Program(Empleado empleado)
+        static void Main(string[] args)
         {
-            this.empleado = empleado;
-        }
+            //puestos
+            Puesto puesto = new Puesto("Gerente", "Responsable de la gestión del personal");
+            Puesto puesto1 = new Puesto("empleado","hace lo que le pide el gerente");
+            //tipo doc
+            Tipo_Documento tipoDoc = new Tipo_Documento("DNI");
+            Tipo_Documento tipoDoc1 = new Tipo_Documento("DNI");
+            //empleados
+            Empleado empleado = new Empleado("Agustin", "Perez", new DateTime(1532, 3, 2), "12345678", tipoDoc, puesto);
+            Empleado empleado1 = new Empleado("Mariano", "Fernandez", new DateTime(2000, 2, 1), "29111333", tipoDoc1, puesto1);
+            //admin
+            Admin admin = new Admin(empleado, puesto, tipoDoc);
+            Admin admin1 = new Admin(empleado1, puesto1, tipoDoc1);
 
+        }
     }
-    }
+}
